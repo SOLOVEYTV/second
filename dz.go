@@ -1,7 +1,5 @@
 package main
 
-import "fmt"
-
 func main() {
 	//Задача 1
 	//for count := 1; count <= 10; count++ {
@@ -45,22 +43,22 @@ func main() {
 
 	//Задача 4
 
-	var sum float64 = 0.0
-	var col int = 0
-
-	for count := 1; count <= 5; count++ {
-		var a float64 = 0
-		fmt.Print("Введите ", count, "е число: ")
-		fmt.Scan(&a)
-		sum = sum + a
-		if a == 5 {
-			col = col + 1
-		}
-		if count == 5 {
-			fmt.Println("Ср. балл: ", sum/5)
-			fmt.Println("Кол-во пятёрок: ", col)
-		}
-	}
+	//var sum float64 = 0.0
+	//var col int = 0
+	//
+	//for count := 1; count <= 5; count++ {
+	//	var a float64 = 0
+	//	fmt.Print("Введите ", count, "е число: ")
+	//	fmt.Scan(&a)
+	//	sum = sum + a
+	//	if a == 5 {
+	//		col = col + 1
+	//	}
+	//	if count == 5 {
+	//		fmt.Println("Ср. балл: ", sum/5)
+	//		fmt.Println("Кол-во пятёрок: ", col)
+	//	}
+	//}
 
 	//Задача 6
 	//var d int
