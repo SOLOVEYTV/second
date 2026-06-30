@@ -16,7 +16,7 @@ func main() {
 	)
 
 	for count := 1; count <= 5; count++ {
-		var numbers = 0.0
+		var numbers = 0
 		fmt.Print("Введите ", count, "е число: ")
 		fmt.Scan(&numbers)
 		for numbers < 0 || numbers > 100 {
@@ -24,7 +24,7 @@ func main() {
 			fmt.Scan(&numbers)
 		}
 
-		sum = sum + numbers
+		sum = sum + float64(numbers)
 		if numbers == 5 {
 			col = col + 1
 		}
