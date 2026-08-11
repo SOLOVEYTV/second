@@ -6,6 +6,13 @@ import (
 	"net/http"
 )
 
+//type (
+//	Rubles  int64
+//	Dollars int64
+//	Kopecks int64
+//	Cents   int64
+//)
+
 type ExchangeResponse struct {
 	Result string             `json:"result"`
 	Rates  map[string]float64 `json:"rates"`
@@ -61,3 +68,13 @@ func GetUsdRate() (float64, error) {
 
 	return data.Rates["USD"], nil
 }
+
+//func FormatRubles(r Rubles, kop Kopecks) string {
+//	return fmt.Sprint(r, " руб. ", kop, " коп.")
+//}
+//
+//func FormatDollars(cents Cents) string {
+//	usd := Dollars(cents / 100)
+//
+//	return fmt.Sprint(usd, " долл. ", cents%100, " цент.")
+//}
